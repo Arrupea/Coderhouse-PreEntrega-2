@@ -1,0 +1,71 @@
+#gridCyN {
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "titulo"
+    "knife1"
+    "texto1"
+    "knife2"
+    "texto2"
+    "knife3"
+    "texto3"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(9 auto);
+  grid-row-gap: 5px;
+}
+
+@media screen and (min-width: 600px) {
+  #gridCyN {
+    grid-template-areas:
+      "header header"
+      "titulo ."
+      "texto1 knife1"
+      "texto2 knife2"
+      "texto3 knife3"
+      "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto 7% auto auto auto 8%;
+    grid-row-gap: 5px;
+  }
+}
+
+.knife1 {
+  grid-area: knife1;
+  display: flex;
+  justify-content: center;
+}
+
+.knife2 {
+  grid-area: knife2;
+  display: flex;
+  justify-content: center;
+}
+
+.knife3 {
+  grid-area: knife3;
+  display: flex;
+  justify-content: center;
+}
+
+.texto1cyn {
+  grid-area: texto1;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.texto2cyn {
+  grid-area: texto2;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.texto3cyn {
+  grid-area: texto3;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}

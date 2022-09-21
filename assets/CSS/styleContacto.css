@@ -1,0 +1,16 @@
+#gridContacto {
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "titulo"
+    "contacto"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 25% 10% auto 8%;
+  grid-row-gap: 5px;
+}
+
+form {
+  grid-area: contacto;
+}
